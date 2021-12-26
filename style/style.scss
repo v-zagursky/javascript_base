@@ -1,0 +1,31 @@
+.my_name {
+	font-weight: bold;
+	font-size: 18px;
+	padding-left: 20px;
+}
+.lessons_list {
+	list-style-type: none;
+	display: flex;
+	gap: 30px;
+}
+.done_lessons_list {
+	list-style-position: inside;
+	& ~ p {
+		text-decoration: underline;
+	}
+	& li {
+		padding: 16px 0;
+	}
+	& code {
+		color: purple;
+	}
+	&_item_list {
+		list-style-type: none;
+	}
+}
+.answer_text {
+	font-style: italic;
+}
+.last_answer {
+	color: red;
+}
