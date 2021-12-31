@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script defer src="js/lesson_2.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Zagurskiy. Javascript. Lesson 2</title>
+</head>
+
+<body>
+	<h1>Домашняя работа по JavaScript</h1>
+	<P>Студент:<span class="my_name">Загурский
+			Владимир</span>
+	</P>
+	<nav class="lessons_nav">
+		<ul class="lessons_list">
+			<li class="lessons_item"><a href="lesson_1.html" class="lessons_link">Урок 1</a></li>
+			<li class="lessons_item"><a href="#" class="lessons_link">Урок 2</a></li>
+			<li class="lessons_item"><a href="#" class="lessons_link">Урок 3</a></li>
+			<li class="lessons_item"><a href="#" class="lessons_link">Урок 4</a></li>
+			<li class="lessons_item"><a href="#" class="lessons_link">Урок 5</a></li>
+			<li class="lessons_item"><a href="#" class="lessons_link">Урок 6</a></li>
+			<li class="lessons_item"><a href="#" class="lessons_link">Урок 7</a></li>
+			<li class="lessons_item"><a href="#" class="lessons_link">Урок 8</a></li>
+		</ul>
+	</nav>
+	<h2>Урок 2</h2>
+	<p>Выполненные задания</p>
+	<ol class="done_lessons_list">
+		<li>Объясните почему код даёт именно такие результаты?
+			<ul class="done_lessons_list_item_list">
+				<li><code>//пример 1
+					let a = 1, b = 1, c, d;
+					c = ++a;
+					alert(c); // ответ: 2</code>
+					<p class="answer_text">Потому что используется оператор префиксного инкермента, т.е. вначале
+						увеличивает
+						переменную на 1, а за тем она используется.</p>
+				</li>
+				<li><code>//пример 2
+			d = b++;
+			alert(d); //ответ: 1</code>
+					<p class="answer_text">Потому что используется оператор постфиксного инкермента, т.е. вначале
+						присваивает
+						значение, а за тем увеличивает на 1.</p>
+				</li>
+				<li><code>//пример 3
+	c = 2 + ++a;
+	alert(c); //ответ: 5</code>
+					<p class="answer_text">Переменная а уже =2, префиксный инкремент ещё увеличивает на 1. с=2+(2+1)</p>
+				</li>
+				<li><code>//пример 4
+	d = 2 + b++;
+	alert(d); //ответ: 4</code>
+					<p class="answer_text">Переменная d уже присвоено 2 и переменной b также уже присвоено значение 2,
+						постфиксный
+						инкремент увеличит на 1 после операции. Если еще раз запросить d - значение будет 5.</p>
+				</li>
+			</ul>
+		</li>
+		<li>Чему будут равны переменные x и a в примере ниже? Написать почему так произошло
+			(описать последовательность действий).
+			<ul class="done_lessons_list_item_list">
+				<li><code>let a = 2;
+				let x = 1 + (a *= 2);</code>
+					<ol>
+						<li class="answer_text">Вначале выполнится действие в скобках, где оператор *= умножит
+							переменную a на 2 с автоматичнеским присвоением значения в переменную a (a = 4). </li>
+						<li class="answer_text">Далее произойдёт сложение с присвоением результата переменной x. </li>
+						<li class="answer_text">Результат: a = 4; x = 5;</li>
+					</ol>
+				</li>
+			</ul>
+		</li>
+		<li>Объявить две переменные a и b и задать им целочисленные произвольные начальные
+			значения. Написать скрипт.
+			<p class="answer_text">Код в файле lesson_2.js</p>
+		</li>
+		<li>Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с двумя
+			параметрами.
+			<p class="answer_text">Код в файле lesson_2.js</p>
+		</li>
+		<li>Реализовать функцию с тремя параметрами: function mathOperation
+			<p class="answer_text">Код в файле lesson_2.js. Честно, голову сломал, как return сделать после switch...
+				Потом посмотрел решение) </p>
+		</li>
+		<li class="last_answer">Программа должна спросить у пользователя число, это будет количество денег, которое он
+			хочет
+			положить на счет в банке.
+			<p class="answer_text">Код в файле lesson_2.js. Получилось! Вспомнил русский язык. Формулу получения
+				полседнего числа загулил) </p>
+		</li>
+	</ol>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.my_name {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.lessons_list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.done_lessons_list {
+  list-style-position: inside;
+}
+
+.done_lessons_list ~ p {
+  text-decoration: underline;
+}
+
+.done_lessons_list li {
+  padding: 16px 0;
+}
+
+.done_lessons_list code {
+  color: purple;
+}
+
+.done_lessons_list_item_list {
+  list-style-type: none;
+}
+
+.answer_text {
+  font-style: italic;
+}
+
+.last_answer {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
